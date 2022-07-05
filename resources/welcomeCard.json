@@ -13,14 +13,14 @@
       "spacing": "medium",
       "size": "default",
       "weight": "bolder",
-      "text": "Welcome to our Online Store",
+      "text": "Welcome to our Online Bakery",
       "wrap": true,
       "maxLines": 0
     },
     {
       "type": "TextBlock",
       "size": "default",
-      "text": "Hi! I'm Mr. Boulanger 😎 Nice to meet you! 👋 \n What brought you here today?\n.",
+      "text": "Hi! I'm Abhishek Pandey yours Mr. Boulanger 😎 Nice to meet you! 👋 \n What brought you here today?\n.",
       "wrap": true,
       "maxLines": 0
     }
