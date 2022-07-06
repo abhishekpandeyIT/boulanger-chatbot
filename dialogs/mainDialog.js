@@ -48,7 +48,7 @@ class MainDialog extends ComponentDialog {
             return await stepContext.next();
         }
 
-        const messageText = stepContext.options.restartMsg ? stepContext.options.restartMsg : '"Say something like I need 2 small packets brown bread"';
+        const messageText = stepContext.options.restartMsg ? stepContext.options.restartMsg : 'Say something like "I need 2 small packets brown bread" or just say :"Order"';
         const promptMessage = MessageFactory.text(messageText, messageText, InputHints.ExpectingInput);
         return await stepContext.prompt('TextPrompt', { prompt: promptMessage });
     }
