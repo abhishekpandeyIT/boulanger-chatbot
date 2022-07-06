@@ -45,9 +45,7 @@ class OnlineStoreDialog extends CancelAndHelpDialog {
             }
             );
         }
-        console.log(orderDetails.product);
         return await stepContext.next(orderDetails.product);
-
     }
 
     /**
@@ -55,10 +53,8 @@ class OnlineStoreDialog extends CancelAndHelpDialog {
      */
     async quantityStep(stepContext) {
         const orderDetails = stepContext.options;
-
         // Capture the response to the previous step's prompt
-        orderDetails.product = stepContext.result.value ? stepContext.result.value : stepContext.result;
-        console.log(stepContext.result.value);
+        orderDetails.product = stepContext.result != null && stepContext.result.value != null ? stepContext.result.value : stepContext.result;
         if (!orderDetails.quantity) {
             const messageText = 'How much units required for today?';
             return await stepContext.prompt(
@@ -77,9 +73,8 @@ class OnlineStoreDialog extends CancelAndHelpDialog {
      */
     async sizeStep(stepContext) {
         const orderDetails = stepContext.options;
-
         // Capture the response to the previous step's prompt
-        orderDetails.quantity = stepContext.result.value ? stepContext.result.value : stepContext.result;
+        orderDetails.quantity = stepContext.result != null && stepContext.result.value != null ? stepContext.result.value : stepContext.result;
         if (!orderDetails.size) {
             const messageText = 'Which size you prefer most?';
             if (orderDetails.product === 'Eggs') {
@@ -109,9 +104,8 @@ class OnlineStoreDialog extends CancelAndHelpDialog {
      */
     async flavorStep(stepContext) {
         const orderDetails = stepContext.options;
-
         // Capture the response to the previous step's prompt
-        orderDetails.size = stepContext.result.value ? stepContext.result.value : stepContext.result;
+        orderDetails.size = stepContext.result != null && stepContext.result.value != null ? stepContext.result.value : stepContext.result;
         if (!orderDetails.flavor) {
             const messageText = 'Which taste you prefer most?';
             if (orderDetails.product === 'Cake' || orderDetails.product === 'Pastries') {

@@ -1,57 +1,30 @@
-# boulangerChatbot
+# Welcome to our Online Bakery
 
-This bot workd as a frontdesk for a online bakery
+Hi! I am [Abhishek Pandey](mailto:abhishek.pandey03@nagarro.com), submitting my project named as **Boulanger**, a french word which means Baker (Someone who own or work at Bakery). This project is submitted for fullfilment of the assignment given under NODE Js and Chatbot workshop organized by NAGP, Nagarro.
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to:
+## Breif Introduction
+I heard this word Boulanger at my French Language Course, and when we are making an online store then I thought it should have a name, so I named this chatbot as Boulanger.
 
-- Use [LUIS](https://www.luis.ai) to implement core AI capabilities
-- Implement a multi-turn conversation using Dialogs
-- Handle user interruptions for such things as `Help` or `Cancel`
-- Prompt for and validate requests for information from the user
+Boulanger is LUIS and Azure based chatbot which uses Natural Language Processing to understand the user's query and respond accordingly. Currently, Boulanger is designed to take orders from the customers. To make this chatbot more user friendly, I have provided options to the users to choose from the given options.
 
-## Prerequisites
+### Advantages:
+Boulanger is intellingent to understand the user needs and ask if something else is required at his end. For example, if user enter in a query that- **I want small bread.** In this query few things are missing such as in what quantity user needs bread, and which type of bread they want brown bread/ wheat bread or any thing else from the given option. 
 
-This sample **requires** prerequisites in order to run.
+To gather these information the Chatbot is intelligent enough and will prompt user to provide ***only rest*** information by choosing from the given options.
 
-### Overview
+## How to Run the Chatbot
+User will need to perform following steps to run this chatbot.
 
-This bot uses [LUIS](https://www.luis.ai), an AI based cognitive service, to implement language understanding.
-
-- [Node.js](https://nodejs.org) version 10.14.1 or higher
-
-    ```bash
-    # determine node version
-    node --version
-    ```
-
-### Create a LUIS Application to enable language understanding
-
-The LUIS model for this example can be found under `cognitiveModels/FlightBooking.json` and the LUIS language model setup, training, and application configuration steps can be found [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=javascript).
-
-Once you created the LUIS model, update `.env` with your `LuisAppId`, `LuisAPIKey` and `LuisAPIHostName`.
-
+ 1. Open a command terminal in the folder where the code for this chatbot exist.
+ 2. Enter `npm install` in the cmd terminal, this command will install all the required packages mentioned in the Package.json file of the folder.
+ 3. Once you created the LUIS model, update `.env` with your `LuisAppId`, `LuisAPIKey` and `LuisAPIHostName`. 
 ```text
-LuisAppId="Your LUIS App Id"
-LuisAPIKey="Your LUIS Subscription key here"
-LuisAPIHostName="Your LUIS App region here (i.e: westus.api.cognitive.microsoft.com)"
+	LuisAppId="Your LUIS App Id"
+	LuisAPIKey="Your LUIS Subscription key here"
+	LuisAPIHostName="Your LUIS App region here (i.e: *******.api.cognitive.microsoft.com)"
 ```
-
-# To run the bot
-
-- Install modules
-
-    ```bash
-    npm install
-    ```
-- Setup LUIS
-
-The prerequisite outlined above contain the steps necessary to provision a language understanding model on www.luis.ai.  Refer to _Create a LUIS Application to enable language understanding_ above for directions to setup and configure LUIS.
-
-- Start the bot
-
-    ```bash
-    npm start
-    ```
+ 4. Once installation and other configuration is completed user need to run the project.
+ 5. To run this project enter `npm start` command in the command terminal. This command will run the code which can be consumed from the BOT Emulator.
 ## Testing the bot using Bot Framework Emulator
 
 [Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
@@ -59,28 +32,15 @@ The prerequisite outlined above contain the steps necessary to provision a langu
 - Install the Bot Framework Emulator version 4.9.0 or greater from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
 
 ### Connect to the bot using Bot Framework Emulator
-
 - Launch Bot Framework Emulator
 - File -> Open Bot
 - Enter a Bot URL of `http://localhost:3978/api/messages`
 
-## Deploy the bot to Azure
 
-To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
+Thanks, with regards
 
+**Abhishek Pandey**
 
-## Further reading
+**Email:** abhishek.pandey03@nagarro.com
 
-- [Bot Framework Documentation](https://docs.botframework.com)
-- [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
-- [Dialogs](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0)
-- [Gathering Input Using Prompts](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-prompts?view=azure-bot-service-4.0)
-- [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
-- [Azure Bot Service Introduction](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [Azure Bot Service Documentation](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0)
-- [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
-- [Azure Portal](https://portal.azure.com)
-- [Language Understanding using LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
-- [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
-- [Restify](https://www.npmjs.com/package/restify)
-- [dotenv](https://www.npmjs.com/package/dotenv)
+**Empl. Id:** 3165002
