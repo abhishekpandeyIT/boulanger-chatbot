@@ -37,6 +37,5 @@ User will need to perform following steps to run this chatbot.
 - Enter a Bot URL of `http://localhost:3978/api/messages`
 
 
-Thanks, with regards
-
+Thanks
 **Abhishek Pandey**
