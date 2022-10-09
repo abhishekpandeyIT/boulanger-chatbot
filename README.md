@@ -1,6 +1,6 @@
 # Welcome to our Online Bakery
 
-Hi! I am [Abhishek Pandey](mailto:abhishek.pandey03@nagarro.com), submitting my project named as **Boulanger**, a french word which means Baker (Someone who own or work at Bakery). This project is submitted for fullfilment of the assignment given under NODE Js and Chatbot workshop organized by NAGP, Nagarro.
+Hi! I am Abhishek Pandey, submitting my project named as **Boulanger**, a french word which means Baker (Someone who own or work at Bakery). 
 
 ## Breif Introduction
 I heard this word Boulanger at my French Language Course, and when we are making an online store then I thought it should have a name, so I named this chatbot as Boulanger.
@@ -40,7 +40,3 @@ User will need to perform following steps to run this chatbot.
 Thanks, with regards
 
 **Abhishek Pandey**
-
-**Email:** abhishek.pandey03@nagarro.com
-
-**Empl. Id:** 3165002
