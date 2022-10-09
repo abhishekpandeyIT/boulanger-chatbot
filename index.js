@@ -6,14 +6,8 @@ require('dotenv').config({ path: ENV_FILE });
 const restify = require('restify');
 
 const {
-    CloudAdapter,
-    ConfigurationServiceClientCredentialFactory,
-    ConversationState,
-    createBotFrameworkAuthenticationFromConfiguration,
-    InputHints,
-    MemoryStorage,
-    UserState
-} = require('botbuilder');
+    CloudAdapter, ConfigurationServiceClientCredentialFactory, ConversationState, createBotFrameworkAuthenticationFromConfiguration,
+    InputHints, MemoryStorage, UserState} = require('botbuilder');
 
 const { OnlineOrderRecognizer } = require('./dialogs/onlineOrderRecognizer');
 
